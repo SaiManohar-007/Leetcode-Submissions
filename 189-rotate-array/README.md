@@ -1,3 +1,14 @@
+<h2>Right Rotate by k places using reversal algo</h2>
+<h3>Reverse the whole array</h3>
+<h3>Reverse the first k places , i.e 0 to K-1</h3>
+<h3>Reverse k to n-k elements</h3>
+<h2>Left Rotate by k places using reversal algo</h2>
+<h3>Reverse the first k places , i.e 0 to K-1</h3>
+<h3>Reverse k to n-k elements</h3>
+<h3>Reverse the whole array</h3>
+<hr>
+
+
 <h2><a href="https://leetcode.com/problems/rotate-array">Rotate Array</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given an integer array <code>nums</code>, rotate the array to the right by <code>k</code> steps, where <code>k</code> is non-negative.</p>
 
 <p>&nbsp;</p>
