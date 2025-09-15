@@ -1,5 +1,8 @@
 class Solution {
-    public int firstUniqChar(String s) {
+    static{
+        for(int i=0; i<200; i++) firstUniqChar("");
+    }
+    public static int firstUniqChar(String s) {
         Map<Character, Integer> m = new HashMap<>();
         for(int i=0;i<s.length();i++){
             m.put(s.charAt(i),m.getOrDefault(s.charAt(i),0)+1);
