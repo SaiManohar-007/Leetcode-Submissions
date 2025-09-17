@@ -5,18 +5,34 @@ class Solution {
     BOTH OF THESE REQUIRE AN EXTRA ARRAY O(n)
      */    
 
-    int[] result= new int[nums.length];
-    int i=0,j=1;
-    for(int k=0;k<nums.length;k++){
-        if(nums[k]%2==0){
-            result[i]=nums[k];
-            i+=2;
-        }
+    // int[] result= new int[nums.length];
+    // int i=0,j=1;
+    // for(int k=0;k<nums.length;k++){
+    //     if(nums[k]%2==0){
+    //         result[i]=nums[k];
+    //         i+=2;
+    //     }
+    //     else{
+    //         result[j]=nums[k];
+    //         j+=2;
+    //     }
+    //  }
+    //  return result;
+
+    int left=0;
+    int right=1;
+    int n=nums.length;
+    while(left<n && right<n){
+        if(nums[left]%2==0) left+=2;
+        else if(nums[right]%2!=0) right+=2;
         else{
-            result[j]=nums[k];
-            j+=2;
+            int temp=nums[left];
+            nums[left]=nums[right];
+            nums[right]=temp;
+            left+=2;
+            right+=2;
         }
-     }
-     return result;
+    }
+    return nums;
     }
 }
