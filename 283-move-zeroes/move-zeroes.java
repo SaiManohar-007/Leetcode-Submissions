@@ -4,19 +4,16 @@ class Solution {
         int j=1;
         while(j<nums.length){
             if(nums[i]==0 && nums[j]!=0){
-                int temp=nums[i];
+                int t=nums[i];
                 nums[i]=nums[j];
-                nums[j]=temp;
-                i++; j++;
+                nums[j]=t; i++;j++;
             }
             else if(nums[i]==0 && nums[j]==0){
                 j++;
             }
-            else if(nums[i]!=0){
+            else{
                 i++;j++;
             }
-
         }
-        
     }
 }
