@@ -1,0 +1,4 @@
+Moving Elements...
+
+if you would like to move elements to the end of the array while preserving the relative order of elements then you gotta use 2 pointers from the staring, one at 0 and the other at 1.
+if you need not to, then just swap them with non zero elements present at the end of the array using 2 pointer starting from start and end of array.
