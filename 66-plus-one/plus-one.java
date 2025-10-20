@@ -13,7 +13,7 @@ class Solution {
             }
         }
         int[] arr=new int[digits.length+1];
-        int connine=0;
+        int conNine=0;
         if(all9){
             arr[0]=1;
             return arr;
@@ -21,15 +21,15 @@ class Solution {
         else{
             for(int i=digits.length-1;i>=0;i--){
                 if(digits[i]==9){
-                    connine++;
+                    conNine++;
                 }
                 else break;
             }
         }
-        for(int i=digits.length-1;i>=digits.length-connine;i--){
+        for(int i=digits.length-1;i>=digits.length-conNine;i--){
             digits[i]=0;
         }
-        digits[digits.length-connine-1]++;
+        digits[digits.length-conNine-1]++;
        
         return digits;
     }
