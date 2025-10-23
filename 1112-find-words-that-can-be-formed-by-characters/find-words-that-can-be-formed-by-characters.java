@@ -7,6 +7,8 @@ class Solution {
         }
        // System.out.println(Arrays.toString(charfreq));
        for(String word: words){
+        int lengthh = word.length();
+        if (lengthh > chars.length()) continue;
         int[] wordfreq= new int[26];
         for(char c: word.toCharArray()){
             wordfreq[c-'a']++;
